@@ -1,10 +1,12 @@
 package net.niksune.TestSpring.controllers;
 
 import net.niksune.TestSpring.beans.Animal;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class MainController {
 
     @GetMapping("/")
